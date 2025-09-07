@@ -38,7 +38,7 @@ if canvas_result.image_data is not None:
     img_array = img_array.reshape(1, 28, 28, 1)
     img_tensor = tf.convert_to_tensor(img_array)
 
-    with tf.GradientTape() as tape:
+    with tf.GradientTape(persistent=True) as tape:
         tape.watch(img_tensor)
         predictions1 = model(img_tensor)
         predictions2 = CNN_model(img_tensor)
@@ -64,3 +64,4 @@ if canvas_result.image_data is not None:
     st.image(img, caption="Processed Image", width=140)
     st.image(saliency1.numpy(), caption="Saliency Map", use_column_width=True)
     st.image(saliency2.numpy(), caption="Saliency Map", use_column_width=True)
+
