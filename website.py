@@ -3,7 +3,6 @@ from streamlit_drawable_canvas import st_canvas
 import numpy as np
 from PIL import Image
 import tensorflow as tf
-import matplotlib.pyplot as plt
 
 # Load your trained MNIST model
 # Make sure you have a model saved as 'mnist_model.h5'
