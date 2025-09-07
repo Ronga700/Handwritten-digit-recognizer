@@ -7,6 +7,7 @@ import tensorflow as tf
 # Load your trained MNIST model
 # Make sure you have a model saved as 'mnist_model.h5'
 model = tf.keras.models.load_model("mnist_model.h5")
+CNN_model = tf.keras.models.load_model("CNN_MNIST_model.h5")
 
 st.title("Draw a Digit!")
 
@@ -39,6 +40,8 @@ if canvas_result.image_data is not None:
     # Predict digit
     prediction = model.predict(img_array)
     digit = np.argmax(prediction)
-    
-    st.write("Predicted Digit:", digit)
+    prediction2 = CNN_model.predict(img_array)
+    digit2= np.argmax(prediction2)
+    st.write("Predicted Digit for Baseline model:", digit)
+    st.write("Predicted Digit for CNN model:", digit2)
     st.image(img, caption="Processed Image", width=140)
