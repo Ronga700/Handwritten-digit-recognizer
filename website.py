@@ -4,8 +4,8 @@ import numpy as np
 from PIL import Image
 import tensorflow as tf
 
-model = tf.keras.models.load_model("MNIST_model.keras")
-CNN_model = tf.keras.models.load_model("CNN_MNIST_model.keras")
+model = tf.keras.models.load_model("MNIST_model.keras", compile=False)
+CNN_model = tf.keras.models.load_model("CNN_MNIST_model.keras", compile=False)
 
 st.title("Draw a digit")
 
@@ -52,5 +52,6 @@ if canvas_result.image_data is not None:
     st.image(img, caption="Processed Image", width=140)
     st.image(saliency1.numpy(), caption="Saliency Map for Baseline Model", use_container_width=True)
     st.image(saliency2.numpy(), caption="Saliency Map for CNN Model", use_container_width=True)
+
 
 
