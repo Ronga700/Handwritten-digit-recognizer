@@ -6,8 +6,8 @@ import tensorflow as tf
 
 # Load your trained MNIST model
 # Make sure you have a model saved as 'mnist_model.h5'
-model = tf.keras.models.load_model("mnist_model.h5")
-CNN_model = tf.keras.models.load_model("CNN_MNIST_model.h5")
+model = tf.keras.models.load_model("MNIST_model.keras")
+CNN_model = tf.keras.models.load_model("CNN_MNIST_model.keras")
 
 st.title("Draw a Digit!")
 
