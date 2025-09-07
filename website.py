@@ -62,6 +62,5 @@ if canvas_result.image_data is not None:
     st.write("Predicted Digit for Baseline model:", digit)
     st.write("Predicted Digit for CNN model:", digit2)
     st.image(img, caption="Processed Image", width=140)
-    st.image(saliency1.numpy(), caption="Saliency Map", use_column_width=True)
-    st.image(saliency2.numpy(), caption="Saliency Map", use_column_width=True)
-
+    st.image(saliency1.numpy(), caption="Saliency Map", use_container_width=True)
+    st.image(saliency2.numpy(), caption="Saliency Map", use_container_width=True)
