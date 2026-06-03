@@ -25,7 +25,7 @@ Interactive visualization shows which pixels influence predictions
 
 6. ## How to Run the Project
 
-1. Clone the repository:
+1.Clone the repository:
 ```bash
 git clone https://github.com/Ronga700/Handwritten-digit-recognizer.git
 
