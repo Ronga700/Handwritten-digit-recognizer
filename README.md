@@ -23,18 +23,17 @@ CNN accuracy: ~98.80%
 Streamlit app demo: https://rovnag-handwritten-digit-recognizer.streamlit.app/
 Interactive visualization shows which pixels influence predictions
 
-6. ## How to Run the Project
+6. How to Run the Project
 
-1.Clone the repository:
+1).Clone the repository:
 ```bash
 git clone https://github.com/Ronga700/Handwritten-digit-recognizer.git
 
-2.Install the required dependencies:
+2)Install the required dependencies:
 pip install -r requirements.txt
 
-3.Run the Streamlit app:
+3)Run the Streamlit app:
 streamlit run website.py
-##
 
 7. Reflection
 
